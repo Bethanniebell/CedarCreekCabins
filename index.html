@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cedar Creek Cabins | Cabins & Sheds</title>
+
+  <style>
+    :root {
+      --brown: #4b3a2f;
+      --gold: #d4a94a;
+      --tan: #c9b08a;
+      --light: #f5f3ef;
+      --dark: #1e1e1e;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(
+        rgba(75,58,47,0.85),
+        rgba(75,58,47,0.85)
+      ),
+      url("https://images.unsplash.com/photo-1501183638710-841dd1904471") center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 5rem 1.5rem;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background: var(--brown);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--tan);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--brown);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      border-top: 5px solid var(--gold);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: var(--brown);
+    }
+
+    .cta {
+      background: var(--brown);
+      color: white;
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+
+    .cta h2 {
+      color: var(--gold);
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: var(--gold);
+      color: var(--dark);
+      padding: 0.9rem 1.7rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Cedar Creek Cabins</h1>
+  <p>Cabins & Sheds Built to Last</p>
+</header>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#models">Buildings</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+  <h2>What We Build</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Custom Cabins</h3>
+      <p>High-quality cabins built for comfort, durability, and long-term use.</p>
+    </div>
+    <div class="card">
+      <h3>Sheds</h3>
+      <p>Storage sheds, workshops, and utility buildings built to your needs.</p>
+    </div>
+    <div class="card">
+      <h3>Portable Buildings</h3>
+      <p>Versatile structures for work, storage, or backyard use.</p>
+    </div>
+  </div>
+</section>
+
+<section id="models">
+  <h2>Why Choose Cedar Creek Cabins</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Quality Materials</h3>
+      <p>Built with durable materials designed to handle real-world use.</p>
+    </div>
+    <div class="card">
+      <h3>Craftsmanship</h3>
+      <p>Attention to detail in every cabin and shed we build.</p>
+    </div>
+    <div class="card">
+      <h3>Local & Reliable</h3>
+      <p>Proudly serving our community with honest work and fair pricing.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p style="max-width: 850px; margin: auto; text-align: center;">
+    Cedar Creek Cabins specializes in building dependable cabins and sheds
+    that combine function, style, and long-term value. Whether you need storage,
+    workspace, or a cabin retreat, we’re here to build it right.
+  </p>
+</section>
+
+<section id="contact" class="cta">
+  <h2>Contact Cedar Creek Cabins</h2>
+  <p>Call us today for pricing and availability</p>
+  <p style="margin-top:1rem;">
+    <strong>Phone:</strong> (270) 597-4113<br>
+    <strong>Office:</strong> (270) 933-4595
+  </p>
+  <a href="tel:12705974113">Call Now</a>
+</section>
+
+<footer>
+  © 2026 Cedar Creek Cabins • Cabins & Sheds
+</footer>
+
+</body>
+</html>
