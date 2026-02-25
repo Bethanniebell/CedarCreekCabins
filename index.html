@@ -1,199 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cedar Creek Cabins | Cabins & Sheds</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cedar Creek Cabins | Amish Built Cabins & Sheds</title>
 
-  <style>
-    :root {
-      --brown: #4b3a2f;
-      --gold: #d4a94a;
-      --tan: #c9b08a;
-      --light: #f5f3ef;
-      --dark: #1e1e1e;
-    }
+<style>
+:root{
+  --deep-brown:#1f140f;
+  --rich-brown:#2e1f18;
+  --accent-gold:#c89b3c;
+  --cream:#f4f0e8;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    body {
-      background: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
-    }
+body{
+  font-family: Georgia, serif;
+  background:var(--cream);
+  color:#222;
+  line-height:1.6;
+}
 
-    header {
-      background: linear-gradient(
-        rgba(75,58,47,0.85),
-        rgba(75,58,47,0.85)
-      ),
-      url("https://images.unsplash.com/photo-1501183638710-841dd1904471") center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 5rem 1.5rem;
-    }
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(31,20,15,.92),rgba(31,20,15,.92)),
+  url("https://images.unsplash.com/photo-1505691723518-36a5ac3b2f5f") center/cover no-repeat;
+  color:white;
+  text-align:center;
+  padding:110px 20px;
+}
 
-    header h1 {
-      font-size: 2.6rem;
-      color: var(--gold);
-      letter-spacing: 1px;
-    }
+.hero img{
+  max-width:300px;
+  margin-bottom:25px;
+}
 
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
+.hero h1{
+  font-size:48px;
+  color:var(--accent-gold);
+  margin-bottom:15px;
+  letter-spacing:1px;
+}
 
-    nav {
-      background: var(--brown);
-      padding: 1rem;
-      text-align: center;
-    }
+.hero p{
+  font-size:22px;
+  opacity:.9;
+}
 
-    nav a {
-      color: var(--tan);
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-    }
+/* HIGHLIGHTS */
+.highlights{
+  background:var(--rich-brown);
+  color:white;
+  text-align:center;
+  padding:70px 20px;
+}
 
-    section {
-      padding: 4rem 1.5rem;
-      max-width: 1100px;
-      margin: auto;
-    }
+.highlights h2{
+  color:var(--accent-gold);
+  margin-bottom:40px;
+  font-size:32px;
+}
 
-    section h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-      color: var(--brown);
-    }
+.badges{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:40px;
+  font-size:20px;
+  font-weight:bold;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-    }
+/* SECTION */
+.section{
+  padding:80px 20px;
+  max-width:1100px;
+  margin:auto;
+}
 
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      border-top: 5px solid var(--gold);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+.section h2{
+  text-align:center;
+  font-size:34px;
+  margin-bottom:50px;
+  color:var(--deep-brown);
+}
 
-    .card h3 {
-      margin-bottom: 1rem;
-      color: var(--brown);
-    }
+/* CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
 
-    .cta {
-      background: var(--brown);
-      color: white;
-      text-align: center;
-      padding: 4rem 1.5rem;
-    }
+.card{
+  background:white;
+  padding:35px;
+  border-radius:12px;
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+  border-bottom:6px solid var(--accent-gold);
+  transition:.3s ease;
+}
 
-    .cta h2 {
-      color: var(--gold);
-    }
+.card:hover{
+  transform:translateY(-8px);
+}
 
-    .cta a {
-      display: inline-block;
-      margin-top: 1.5rem;
-      background: var(--gold);
-      color: var(--dark);
-      padding: 0.9rem 1.7rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.card h3{
+  color:var(--rich-brown);
+  margin-bottom:18px;
+  font-size:22px;
+}
 
-    footer {
-      background: #111;
-      color: #bbb;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.9rem;
-    }
-  </style>
+/* MAP */
+.map{
+  margin-top:40px;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* CTA */
+.cta{
+  background:var(--deep-brown);
+  color:white;
+  text-align:center;
+  padding:90px 20px;
+}
+
+.cta h2{
+  color:var(--accent-gold);
+  font-size:34px;
+  margin-bottom:20px;
+}
+
+.cta a{
+  display:inline-block;
+  margin-top:25px;
+  background:var(--accent-gold);
+  color:#111;
+  padding:16px 34px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:18px;
+}
+
+footer{
+  background:#111;
+  color:#aaa;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+}
+</style>
 </head>
 
 <body>
 
-<header>
+<div class="hero">
+  <img src="logo.png" alt="Cedar Creek Cabins Logo">
   <h1>Cedar Creek Cabins</h1>
-  <p>Cabins & Sheds Built to Last</p>
-</header>
+  <p>Amish Build Quality • Cabins & Sheds Built to Last</p>
+</div>
 
-<nav>
-  <a href="#services">Services</a>
-  <a href="#models">Buildings</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav>
+<div class="highlights">
+  <h2>Why Customers Choose Us</h2>
+  <div class="badges">
+    <div>✔ One Payment Delivers</div>
+    <div>✔ No Credit Checks</div>
+    <div>✔ Amish Build Quality</div>
+    <div>✔ Two Convenient Locations</div>
+  </div>
+</div>
 
-<section id="services">
+<div class="section">
   <h2>What We Build</h2>
   <div class="grid">
     <div class="card">
       <h3>Custom Cabins</h3>
-      <p>High-quality cabins built for comfort, durability, and long-term use.</p>
+      <p>Comfortable, handcrafted cabins built for durability and long-term value.</p>
     </div>
     <div class="card">
       <h3>Sheds</h3>
-      <p>Storage sheds, workshops, and utility buildings built to your needs.</p>
+      <p>Storage sheds, workshops, and utility buildings built strong and delivered professionally.</p>
     </div>
     <div class="card">
       <h3>Portable Buildings</h3>
-      <p>Versatile structures for work, storage, or backyard use.</p>
+      <p>Move-in-ready structures placed exactly where you need them.</p>
     </div>
   </div>
-</section>
+</div>
 
-<section id="models">
-  <h2>Why Choose Cedar Creek Cabins</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Quality Materials</h3>
-      <p>Built with durable materials designed to handle real-world use.</p>
-    </div>
-    <div class="card">
-      <h3>Craftsmanship</h3>
-      <p>Attention to detail in every cabin and shed we build.</p>
-    </div>
-    <div class="card">
-      <h3>Local & Reliable</h3>
-      <p>Proudly serving our community with honest work and fair pricing.</p>
-    </div>
-  </div>
-</section>
-
-<section id="about">
-  <h2>About Us</h2>
-  <p style="max-width: 850px; margin: auto; text-align: center;">
-    Cedar Creek Cabins specializes in building dependable cabins and sheds
-    that combine function, style, and long-term value. Whether you need storage,
-    workspace, or a cabin retreat, we’re here to build it right.
+<div class="section">
+  <h2>Visit Our Location</h2>
+  <p style="text-align:center; font-size:20px;">
+    <strong>101 Purchase Drive<br>Paducah, KY 42003</strong>
   </p>
-</section>
 
-<section id="contact" class="cta">
-  <h2>Contact Cedar Creek Cabins</h2>
-  <p>Call us today for pricing and availability</p>
-  <p style="margin-top:1rem;">
-    <strong>Phone:</strong> (270) 597-4113<br>
-    <strong>Office:</strong> (270) 933-4595
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps?q=101%20Purchase%20Drive%20Paducah%20KY%2042003&output=embed"
+      width="100%" height="400" style="border:0;" loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+<div class="cta">
+  <h2>Call Today For Pricing & Availability</h2>
+  <p>
+    Phone: (270) 597-4113<br>
+    Office: (270) 933-4595
   </p>
   <a href="tel:12705974113">Call Now</a>
-</section>
+</div>
 
 <footer>
   © 2026 Cedar Creek Cabins • Cabins & Sheds
